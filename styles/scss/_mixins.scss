@@ -1,0 +1,29 @@
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@mixin flex-column {
+  flex-direction: column;
+}
+
+@mixin button-style($background-color, $text-color) {
+  @include center-flex;
+  flex-direction: column;
+  font-weight: 700;
+  width: 267px;
+  height: 41px;
+  margin: 20px 0;
+  color: $text-color;
+  background: $background-color;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 1s ease, color 2s ease;
+  
+  &:hover {
+    background: $green;
+    color: $off-black;
+  }
+}

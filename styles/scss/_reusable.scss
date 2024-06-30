@@ -1,0 +1,36 @@
+// Reusable Styles
+
+._profile {
+  img {
+    border-radius: 50%;
+    width: 90.5px;
+  }
+
+  p:first-child {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 30px 0 14px;
+  }
+
+  p:last-child {
+    font-weight: 600;
+    color: $green;
+    margin-bottom: 30px;
+  }
+
+  margin-bottom: 30px;
+}
+
+._btns-ctn {
+  ._btn {
+    @include button-style($grey, $white);
+  }
+
+  ._btn:first-child {
+    margin-top: 0;
+  }
+
+  ._btn:last-child {
+    margin-bottom: 0;
+  }
+}

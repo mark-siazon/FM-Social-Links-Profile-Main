@@ -1,89 +1,28 @@
-.attribution { 
-  a { 
-    color: $green;
-    text-decoration: none 
-  }
-  
-  font-size: 11px; text-align: center; 
+// Component-specific styles
 
+.attribution {
+  opacity: 0.7;
+  font-size: 12px;
+  text-align: center;
   margin-top: 35px;
+  transition: opacity 1s ease, font-size 1s ease;
+
+  a {
+    color: $green;
+    text-decoration: none;
+  }
+
+  &:hover{
+    opacity: 1;
+    font-size: 13px;
+  }
 }
 
-body{
-  color: $white;
-  background: $off-black;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-main{
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+main {
+  @include center-flex;
+  @include flex-column;
   text-align: center;
   background: $dark-grey;
   padding: 25px 30px;
   border-radius: 16px;
-}
-
-div._profile{
-  img{
-    border-radius: 50%;
-    width: 90.5px;
-  }
-
-  p:first-child{
-    font-size: 1.15rem;
-    font-weight: 500;
-  }
-
-  p:last-child{
-    font-weight: 600;
-    color: $green;
-  }
-}
-
-q{
-  font-weight: normal;
-}
-
-div._btns-ctn{
-  margin-top: 30px;
-  ._btn{
-    font-weight: 700;
-    width: 267px;
-    height: 41px;
-    margin: 20px 0;
-  
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    color: $white;
-    background: $grey;
-    border-radius: 8px;
-    text-decoration: none;
-  
-  }
-
-  ._btn:last-child{
-    margin-bottom: 0;
-  }
-
-  ._btn:hover{
-    background: $green;
-    color: $off-black;
-  }
 }

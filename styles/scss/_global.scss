@@ -1,0 +1,20 @@
+body {
+  color: $white;
+  background: $off-black;
+  height: 100vh;
+  @include center-flex;
+  @include flex-column;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+main {
+  @include center-flex;
+  @include flex-column;
+  text-align: center;
+  background: $dark-grey;
+  padding: 25px 30px;
+  border-radius: 16px;
+}
